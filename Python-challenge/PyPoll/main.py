@@ -45,6 +45,8 @@ saveFile.write("Election Results" + "\n")
 saveFile.write("-----------------------------------" + "\n")
 saveFile.write(f"Total Votes: {total_votes}" + "\n")
 saveFile.write("-------------------------" + "\n")
+for person, vote_count in candidate_votes.items():
+    saveFile.write(f"{person}: {candidate_percentages[person]} ({vote_count})" + "\n")
 saveFile.write("-------------------------" + "\n")
 saveFile.write(f"Winner: {winner}" + "\n")
 saveFile.write("-------------------------")
