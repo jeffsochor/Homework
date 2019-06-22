@@ -19,9 +19,9 @@ with open(csv_path) as data:
         avg_rev_change = sum(rev_change)/len(rev_change)
         max_rev_change = max(rev_change)
         min_rev_change = min(rev_change)
-        max_rev_change_date = str(date[rev_change.index(max(rev_change))])
-        min_rev_change_date = str(date[rev_change.index(min(rev_change))])
-
+        max_rev_change_date = str(date[rev_change.index(max(rev_change)) + 1])
+        min_rev_change_date = str(date[rev_change.index(min(rev_change)) + 1])
+        
 print("Financial Analysis")
 print("-----------------------------------")
 print("Total Months:", len(date))
