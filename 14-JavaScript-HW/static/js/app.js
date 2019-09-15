@@ -61,15 +61,6 @@ for (let index = 0; index < tableData.length; index++) {
 
 // textBox.on("change", FilterDates);
 
-var button = d3.select("#filter-btn");
-button.on("click", function () { 
-    d3.event.preventDefault(); //prevents form from trying to refresh page
-    var inputElement = d3.select("#datetime");
-    var inputValue = inputElement.property("value");
-    var filteredData = tableData.filter(row => row.datetime === inputValue);
-    console.log(filteredData);
-   tableAppend(filteredData); 
-});
 
 
 
